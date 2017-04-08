@@ -150,7 +150,7 @@ public class DBManager {
 }
 ```
 
-如何使用数据库：
+* 如何使用数据库：
 
 1、定义和初始化DBmanager
 ```
@@ -177,6 +177,11 @@ dbMag = new DBManager(getApplicationContext());
  Person per = new Person("123","456");
  dbMag.user_deleteBySid(per.sid);
 ```
+
+* 如何在手机上查看本地sqlite数据库：
+
+http://blog.csdn.net/sinat_29398599/article/details/52805701
+
 
 ## 弹框的设置
 * 定义弹框xml界面
@@ -236,7 +241,7 @@ dbMag = new DBManager(getApplicationContext());
 
 ![](./imgs/01.png)
 
-* Java代码
+* 自定义Dialog类
 ```
 public class CreateUserDialog extends Dialog {
 
@@ -318,6 +323,8 @@ public class CreateUserDialog extends Dialog {
 
 ![](./imgs/06.png)
 
-## Java代码
- 具体见codes
+## ListView弹窗，数据的增加删除
 
+```
+codes/Test_ListView/app/src/main/java/com/example/yy/test_listview/MyListView.java
+```
