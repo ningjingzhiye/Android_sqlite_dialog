@@ -1,0 +1,25 @@
+  DBManager dbMag = new DBManager(getApplicationContext());
+
+                Person per = new Person("123","456");
+                dbMag.user_insertUser(per);
+
+                Person per3 = new Person("aaa","bbb");
+                dbMag.user_insertUser(per3);
+
+                dbMag.user_deleteBySid(per.sid);
+
+//                List<Person> lp = dbMag.user_getAll();
+//                int cnt = lp.size();
+//                String tmp = String.valueOf(cnt);
+                Person per4 = new Person("ccc","ddd");
+                dbMag.user_insertUser(per4);
+                Person pp = dbMag.user_getBySname(per4.sname);
+
+//                if(pp!=null){
+//                    Toast toast=Toast.makeText(getApplicationContext(),pp.sid, Toast.LENGTH_SHORT);
+//                    toast.show();
+//                }
+                //Person per2 = dbMag.user_getBySid(per3.sid);
+
+                Toast toast=Toast.makeText(getApplicationContext(),"pp.id", Toast.LENGTH_SHORT);
+                toast.show();
